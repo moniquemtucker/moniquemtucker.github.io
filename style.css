@@ -38,18 +38,31 @@ body {
     padding-top: 30px;
 }
 
+.home_button a {
+    height: 20px;
+    text-decoration: none;
+}
+
 .home_button img {
     height: 20px;
     padding-top: 100px;
     margin: 0 auto;
 }
 
-
-.active-nav {
+.home_button span {
+    padding-top: 100px;
+    margin: 0 auto;
+    font-size: 20px;
     color: #656565;
 }
 
+
+
 /* about page styling */
+
+#about {
+    color: #656565;
+}
 
 .about_me {
     padding-top: 20px;
@@ -80,7 +93,16 @@ body {
     width: 48px;
 }
 
+#resume {
+    border-radius: 0;
+    font-variant: small-caps;
+}
+
 /* portfolio page styling*/
+
+#portfolio {
+    color: #656565;
+}
 
 .proj {
     margin: 0 auto;
