@@ -4,43 +4,104 @@
 <head lang="en">
   <meta charset="utf-8">
   <title>monique tucker - portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <!-- get JQuery -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
   <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <script src="js/portfolio.js" type="text/javascript"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div>
     <ul class="navbar">
       <li><a href="/about.html">About</a></li>
-      <li><a href="/portfolio.html" id="portfolio">Portfolio</a></li>
+      <li><a href="/portfolio.html" class="active-nav">Portfolio</a></li>
       <li><a href="/contact.html">Contact</a></li>
     </ul>
   </div>
 
   <div class="proj">
-    <h2>Python Projects</h2>
-    <ul>
-      <li><a href="https://github.com/moniquemtucker/pdxcodeguild/blob/master/primenum3.py" target="_blank" title="Prime Nums">
-          Prime Numbers:</a> Enter a number and program lists all prime numbers up to that number.</li>
-      <li><a href="https://github.com/moniquemtucker/pdxcodeguild/blob/master/gofish30.py" target="_blank" title="Go Fish!" >Go Fish!:</a>
-          Classic game of matching pairs. Created before learning about Classes.</li>
-      <li><a href="https://github.com/moniquemtucker/pdxcodeguild/blob/master/fincalc_wc.py" target="_blank" title="Who Owes Who?" >Who Owes Who?:</a>
-          This program reconciles finances for two people to determine who owes whom at the end of a month.
-          User will enter the names of the expenses, amounts, and who payed-- the program will assume an even split and determine who owes who.</li>
-    </ul>
-    <h2>Front-end Projects</h2>
-      <ul>
-        <li><a href="https://github.com/moniquemtucker/pdxcodeguild/tree/master/coaching" target="_blank" title="Career Coaching">
-          James Heller Positive Psychology Coaching:</a> Designing and developing professional webpage for positive psychology
-          career coaching practice with HTML, CSS/Bootstrap, and JavaScript/JQuery.</li>
-      </ul>
-    <h2>Udacity Projects</h2>
-      <ul>
-        <li><a href="http://moniquemtucker.github.io/2048/" target="_blank" title="Superfoods">Superfoods 2048:</a>
-          Forked 2048 game reimagined with superfood images.</li>
-      </ul>
+    <h2>rough drafts. my always evolving projects.</h2>
+    <div class="container" >
+      <div class="row" id="top-row">
+        <div class="col-md-6">
+         <div class="thumbnail">
+          <div class="caption">
+          <h4>James Heller Positive Psychology Coaching</h4>
+              <p>professional webpage for positive psychology career + life coaching practice</p>
+              <p class="tech">#HTML #CSS #Bootstrap #JavaScript #JQuery</p>
+            <p><a href="https://github.com/moniquemtucker/pdxcodeguild/tree/master/frontend_projects/coaching" target="_blank" class="label label-info" rel="tooltip" title="view code">view code</a>
+            <a href="" class="label label-default" rel="tooltip" title="visit site">visit site</a>
+            </p>
+          </div>
+          <img src="/pics/jhcoaching.png" title="Monique Tucker"/>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>simply good</h4>
+              <p>web app that tracks consumption of whole and processed foods in a diary format</p>
+              <p class="tech">#Django #HTML #CSS #Bootstrap #JavaScript #JQuery #Python #AJAX</p>
+              <p><a href="https://github.com/moniquemtucker/simply-good/tree/master/simply_good_django" target="_blank" class="label label-info" rel="tooltip" title="view code">view code</a>
+              <a href="" class="label label-default" rel="tooltip" title="visit site">visit site</a></p>
+            </div>
+            <img src="/pics/simplygood.png" title="Monique Tucker"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="second-row">
+        <div class="col-md-4">
+          <div class="thumbnail back-end-proj">
+            <div class="caption">
+              <h4>Who Owes Who?</h4>
+              <p>reconciles finances for 2 people to determine who owes whom at the end of a month</p>
+              <p class="tech">#Python</p>
+              <p><a href="https://github.com/moniquemtucker/pdxcodeguild/blob/master/python_final_project/fincalc_wc.py" target="_blank" class="label label-info" rel="tooltip" title="view code">view code</a>
+              <a href="" class="label label-default" rel="tooltip" title="visit site">visit site</a>
+              </p>
+            </div>
+            <h1>Who Owes Who?</h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail back-end-proj">
+            <div class="caption">
+              <h4>Go Fish!</h4>
+              <p>classic game of matching pairs without using Classes.</p>
+              <p class="tech">#Python</p>
+              <p><a href="https://github.com/moniquemtucker/pdxcodeguild/blob/master/python_projects/gofish30.py" target="_blank" class="label label-info" rel="tooltip" title="view code">view code</a>
+              <a href="" class="label label-default" rel="tooltip" title="visit site">visit site</a>
+              </p>
+            </div>
+            <h1>GO FISH!</h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail back-end-proj">
+            <div class="caption">
+            <h4>Tip Calculator</h4>
+            <p>even split or itemize "receipt" object</p>
+            <p class="tech">#JavaScript</p>
+            <p><a href="https://github.com/moniquemtucker/pdxcodeguild/blob/master/javascript_projects/combined_tip_calc.html" target="_blank"  class="label label-info" rel="tooltip" title="view code">view code</a>
+            <a href="" class="label label-default" rel="tooltip" title="visit site">visit site</a>
+            </p>
+            </div>
+            <h1>tip calculator</h1>
+          </div>
+        </div>
+      </div>
   </div>
+
   <p class="home_button"><a href="/index.html" title="Home"><img src="/pics/home.png"></a></p>
 </body>
 </html>
