@@ -94,8 +94,11 @@ body {
 }
 
 #resume {
-    border-radius: 0;
+    /*border-radius: 0;*/
     font-variant: small-caps;
+    font-size: 25px;
+    color: #656565;
+    width: 15%;
 }
 
 /* portfolio page styling*/
