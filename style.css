@@ -94,11 +94,11 @@ body {
 }
 
 #resume {
-    /*border-radius: 0;*/
-    font-variant: small-caps;
     font-size: 25px;
     color: #656565;
     width: 15%;
+    font-family: 'Arvo', sans-serif;
+
 }
 
 /* portfolio page styling*/
@@ -111,7 +111,6 @@ body {
     margin: 0 auto;
     width: 80%;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .proj h2 {
